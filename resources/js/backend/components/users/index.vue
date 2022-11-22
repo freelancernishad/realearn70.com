@@ -3,7 +3,7 @@
 
 
     <section id="slider">
-        <img width="100%" :src="slideimage" alt="">
+        <!-- <img width="100%" :src="slideimage" alt=""> -->
     </section>
 
     <section id="marquee">
