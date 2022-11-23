@@ -16,7 +16,7 @@
             <p>Automatic order mode</p>
         </section> -->
         <section class="text-center position-relative" v-if="!orderpage">
-            <img style="width:98%" :src="$asseturl + 'img/215.png'" alt="">
+            <img style="width:50%" :src="$asseturl + 'img/4.jpeg'" alt="">
             <div class="orderamount" v-if="receive">Tk {{ random }}</div>
         </section>
         <section class="text-center position-relative" v-if="!orderpage">
@@ -166,7 +166,10 @@ const random = Math.floor(Math.random() * this.products.length);
     async orderSubmit(){
         this.form['user_id'] = this.row.user.id;
         var res = await this.callApi('post',`/api/admin/task`,this.form);
-        if(res.data==444){
+        if(res.data==999){
+
+            Notification.customError(`সর্বনিম্ন ৩০০ টাকা থাকলে অ্যাকাউন্ট এ থাকলে কাজ করতে পারবেন`);
+        }else if(res.data==444){
 
             Notification.customError(`You Can't Complete any order Today`);
         }else{

@@ -86,7 +86,9 @@ class TaskController extends Controller
         // $task_comisition = $request->task_comisition;
 
      $user = User::find($user_id);
-
+        if($user->balance<300){
+            return 999;
+        }
 
 
      $registerdate =  date('d-m-Y', strtotime($user->created_at));

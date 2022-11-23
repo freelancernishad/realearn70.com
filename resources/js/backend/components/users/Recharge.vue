@@ -5,7 +5,7 @@
         <section id="topbar">
             <div class="title">
                 <a href="javascript:void(0)" @click="$router.go(-1)"><i class="fa fa-angle-left"></i></a>
-                <p>Recharge</p>
+                <p>Deposit</p>
             </div>
         </section>
 
@@ -16,7 +16,7 @@
 
 
                         <div class="form-group">
-                            <label for="">Recharge Method</label>
+                            <label for="">Deposit Method</label>
                             <select class="form-control" v-model="payMethods" @change="getMethods"  required>
                                 <option value="">Select</option>
                                 <option v-for="pay in row" :key="'pay' + pay.id" :value="pay.id">{{ pay.name }}
@@ -26,7 +26,7 @@
 
 
                         <div class="form-group">
-                            <label for="">Recharge Amount</label>
+                            <label for="">Deposit Amount</label>
                             <input type="tel" class="form-control" v-model="amount" >
                         </div>
 
@@ -44,13 +44,14 @@
 
 
                         <div class="row" v-else-if="payMethods">
-                            <div class="col-6 amount_item" @click="amount = 700"><span>{{ 700/rates }}</span> </div>
-                            <div class="col-6 amount_item" @click="amount = 1000"><span>{{ 1000/rates }}</span></div>
-                            <div class="col-6 amount_item" @click="amount = 2000"><span>{{ 2000/rates }}</span></div>
-                            <div class="col-6 amount_item" @click="amount = 5000"><span>{{ 5000/rates }}</span></div>
-                            <div class="col-6 amount_item" @click="amount = 10000"><span>{{ 10000/rates }}</span></div>
-                            <div class="col-6 amount_item" @click="amount = 20000"><span>{{ 20000/rates }}</span></div>
-                            <div class="col-6 amount_item" @click="amount = 25000"><span>{{ 25000/rates }}</span></div>
+                            <div class="col-6 amount_item" @click="amount = 300/rates"><span>{{ 300/rates }}</span> </div>
+                            <div class="col-6 amount_item" @click="amount = 500/rates"><span>{{ 500/rates }}</span> </div>
+                            <div class="col-6 amount_item" @click="amount = 1000/rates"><span>{{ 1000/rates }}</span></div>
+                            <div class="col-6 amount_item" @click="amount = 2000/rates"><span>{{ 2000/rates }}</span></div>
+                            <div class="col-6 amount_item" @click="amount = 5000/rates"><span>{{ 5000/rates }}</span></div>
+                            <div class="col-6 amount_item" @click="amount = 10000/rates"><span>{{ 10000/rates }}</span></div>
+                            <div class="col-6 amount_item" @click="amount = 20000/rates"><span>{{ 20000/rates }}</span></div>
+                            <div class="col-6 amount_item" @click="amount = 25000/rates"><span>{{ 25000/rates }}</span></div>
 
                         </div>
 
@@ -100,7 +101,7 @@ font-size: 17px;">বিঃদ্রঃ অবশই সেন্ড মান�
         </ul>
 
     </div>
-    <h4 class="d-block bg-success text-white p-1 my-3">Recharge Info</h4>
+    <h4 class="d-block bg-success text-white p-1 my-3">Deposit Info</h4>
 
 
                         <div class="form-group" v-if="form.method=='USDT'">
@@ -202,7 +203,7 @@ export default {
         },
 
         async getData() {
-            var res = await this.callApi('get', `/api/admin/withdraw/gateway`, []);
+            var res = await this.callApi('get', `/api/admin/withdraw/gateway?type=front`, []);
             this.row = res.data;
 
         },

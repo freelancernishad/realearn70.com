@@ -32,6 +32,8 @@
 
 </form>
                 </div>
+
+<!--
                 <div class="long-title">
                     <p>Change withdrawal password</p>
                 </div>
@@ -46,7 +48,7 @@
 
                     <input type="submit" class="savedata" value="Confirm to modify the withdrawal password">
 </form>
-                </div>
+                </div> -->
 
 
 

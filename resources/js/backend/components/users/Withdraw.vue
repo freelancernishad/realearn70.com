@@ -37,7 +37,7 @@
                             <button class="btn btn-info" v-if="bankcardAlert" disabled >Wait...</button>
                             <button class="btn btn-info" v-else @click="nextFun(2)">Next</button>
                         </div>
-                        <p style="color: red;text-align: center;font-size: 17px;">প্রত্যাহার সময় সপ্তাহের সোমবার থেকে শুক্রবার সকাল
+                        <p style="color: red;text-align: center;font-size: 17px;">প্রত্যাহার সময় সকাল
                             ১০:০০ থেকে সন্ধা ০৫:০০ টা পর্যন্ত </p>
                         <p style="color: red;text-align: center;font-size: 17px;">প্রত্যাহার প্রসেসিং ফি {{ gateways.percent_charge }}% এবং
                             প্রত্যাহার ২৪ ঘন্টার মধ্যে একাউন্ট এ পৌছাবে</p>

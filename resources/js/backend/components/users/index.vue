@@ -31,7 +31,7 @@
           <div class="col-3 p-0">
             <router-link :to="{name:'Recharge'}">
               <img class="reImage" :src="$asseturl+'frontend/img/recharge.jpeg'" alt="tab" />
-              <span>Recharge</span>
+              <span>Deposit</span>
             </router-link>
           </div>
           <div class="col-3 p-0">
@@ -40,12 +40,12 @@
               <span>Withdrawal</span>
             </router-link>
           </div>
-          <div class="col-3 p-0">
+          <!-- <div class="col-3 p-0">
             <router-link :to="{name:'companyPro'}">
               <img class="reImage" :src="$asseturl+'frontend/img/company.jpeg'" alt="tab" />
               <span>Company Profiles</span>
             </router-link>
-          </div>
+          </div> -->
           <div class="col-3 p-0">
             <router-link :to="{name:'invite'}">
               <img class="reImage" :src="$asseturl+'frontend/img/invite.jpeg'" alt="tab" />
@@ -89,9 +89,9 @@
 
 
           <div class="col-md-12">
-            <h3 class="text-center">Our Partners</h3>
+            <!-- <h3 class="text-center">Our Partners</h3> -->
             <hr>
-            <img width="100%" :src="$asseturl+'frontend/img/partners.jpeg'" alt="">
+            <img width="100%" :src="$asseturl+'frontend/img/partners2.jpeg'" alt="">
           </div>
 
         </div>

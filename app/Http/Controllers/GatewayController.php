@@ -15,7 +15,10 @@ class GatewayController extends Controller
     public function index(Request $request)
     {
 
-
+        $type = $request->type;
+        if($type=='front'){
+            return Gateway::where('status','active')->get();
+        }
 
             return Gateway::all();
 

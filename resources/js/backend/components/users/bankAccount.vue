@@ -42,6 +42,8 @@
 
 
             </div>
+
+<!--
             <div class="long-title">
                 <p>Verify withdrawal password</p>  </div>
                 <div class="container-fluid">
@@ -49,14 +51,14 @@
                     <label><span class="require">*</span>Withdrawal password</label>
                     <input type="text" v-model="row.user.withdrawpass"  class="form-control" placeholder="" :readonly="readonly" required>
 </div>
-                    <input type="checkbox" class="checkbox"><span>I have agreed to the service agreement</span>
+
+
+
+
+                </div> -->
+                <input type="checkbox" class="checkbox"><span>I have agreed to the service agreement</span>
                     <p class="det">প্রিয় সদস্য আপনি শুধু মাত্র একবার আপনার ব্যাংক কার্ড সেটিং করতে পারবেন। তাই সাবমিট করার পূবে ভালো করে দেখে নিন। </p>
-
-                            <input type="submit" class="savedata" value="Save information">
-
-                </div>
-
-
+                    <input type="submit" class="savedata" value="Save information">
         </form>
 
     </section>
@@ -92,7 +94,7 @@ export default {
             this.row = res.data;
 
 
-            var getway = await this.callApi('get', `/api/admin/withdraw/gateway`, []);
+            var getway = await this.callApi('get', `/api/admin/withdraw/gateway?type=front`, []);
             this.getways = getway.data;
 
         if(this.row.user.Bank_account==null || this.row.user.Bank_Name==null){

@@ -13,7 +13,7 @@
                     <div class="col-3 p-0" style="width: 20% !important;">
                         <div class="menu">
                             <router-link :to="{name:'Authuser'}">
-                                <img :src="$asseturl+'frontend/img/home.png'" alt="Home">
+                                <img :src="$asseturl+'frontend/img/home2.png'" alt="Home">
                                 <img :src="$asseturl+'frontend/img/HomeA.png'" alt="Home" class="activeimg">
                                 <p>Home</p>
                             </router-link>
@@ -22,7 +22,7 @@
                     <div class="col-3 p-0" style="width: 20% !important;">
                         <div class="menu">
                             <router-link :to="{name:'UserTeam'}">
-                                <img :src="$asseturl+'frontend/img/team.png'" alt="Home">
+                                <img :src="$asseturl+'frontend/img/team2.png'" alt="Home">
                                 <img :src="$asseturl+'frontend/img/TeamA.png'" alt="Home" class="activeimg">
                                 <p>Team</p>
                             </router-link>
