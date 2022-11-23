@@ -24,7 +24,7 @@
                             <input type="tel" class="form-control" @input="checkAmount(form.amount)"
                                 v-model="form.amount">
                         </div>
-                        <p> Available Balance : {{  user.user.balance - 300  }} </p>
+                        <p> Available Balance : {{  user.user.balance  }} </p>
                         <!-- <div class="row">
                             <div class="col-6 amount_item" @click="checkAmount(500)"><span>500</span> </div>
                             <div class="col-6 amount_item" @click="checkAmount(1000)"><span>1000</span></div>
@@ -92,8 +92,8 @@ export default {
     },
     methods: {
         checkAmount(amount) {
-            if (amount > this.user.user.balance - 300) {
-                Notification.customError(`You can't Withdraw ${amount}.Because your account balance is ${this.user.user.balance - 300}`);
+            if (amount > this.user.user.balance) {
+                Notification.customError(`You can't Withdraw ${amount}.Because your account balance is ${this.user.user.balance}`);
                 this.form.amount = '';
             } else {
                 this.form.amount = amount;
