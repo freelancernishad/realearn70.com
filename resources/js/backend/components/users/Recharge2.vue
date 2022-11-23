@@ -58,8 +58,8 @@
                         <button class="btn btn-info" @click="nextFun(2)">Next</button>
 
 
-<p style="color: red;text-align: center;
-font-size: 17px;">রিচার্জ সময় সপ্তাহের সকল দিন সকাল ১০:০০ থেকে রাত ১১ঃ০০ টা পর্যন্ত </p>
+<!-- <p style="color: red;text-align: center;
+font-size: 17px;">রিচার্জ সময় সপ্তাহের সকল দিন সকাল ১০:০০ থেকে রাত ১১ঃ০০ টা পর্যন্ত </p> -->
                     </div>
 
                     <form @submit.stop.prevent="onSubmit" v-else-if="step == 2">
@@ -70,7 +70,7 @@ font-size: 17px;">রিচার্জ সময় সপ্তাহের স�
     <h4 class="d-block bg-success text-white p-1 my-3">Payment Info</h4>
 
 <p style="color: red;
-font-size: 17px;">বিঃদ্রঃ অবশই সেন্ড মানি করবেন এবং রেফারেন্স এ আপনার Username দিবেন ।</p>
+font-size: 17px;">বিঃদ্রঃ অবশই সেন্ড মানি করবেন।</p>
     <div class="patment_info">
         <ul class="list-unstyled">
 
@@ -202,7 +202,7 @@ export default {
         },
 
         async getData() {
-            var res = await this.callApi('get', `/api/admin/withdraw/gateway`, []);
+            var res = await this.callApi('get', `/api/admin/withdraw/gateway?type=front`, []);
             this.row = res.data;
 
         },

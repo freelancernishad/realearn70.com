@@ -58,9 +58,9 @@
 
                         <button class="btn btn-info" @click="nextFun(2)">Next</button>
 
-
+<!--
 <p style="color: red;text-align: center;
-font-size: 17px;">রিচার্জ সময় সপ্তাহের সকল দিন সকাল ১০:০০ থেকে রাত ১১ঃ০০ টা পর্যন্ত </p>
+font-size: 17px;">রিচার্জ সময় সপ্তাহের সকল দিন সকাল ১০:০০ থেকে রাত ১১ঃ০০ টা পর্যন্ত </p> -->
                     </div>
 
                     <form @submit.stop.prevent="onSubmit" v-else-if="step == 2">
