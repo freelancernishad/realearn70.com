@@ -12,7 +12,7 @@
                 </div>
                 <form action="" class="link">
                     <div class="row">
-                        <input disabled type="url" class="col-md-12" v-model="ref">
+                        <input disabled type="url" class="col-md-12" style="width:100% !important" v-model="ref">
                         <!-- <input type="button" value="copy" class="copy" @click="copyref"> -->
                     </div>
                 </form>
