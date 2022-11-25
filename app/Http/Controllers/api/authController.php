@@ -99,7 +99,7 @@ class authController extends Controller
         $visitorId = $r->visitorId;
 
         $users = User::where('visitorId',$visitorId)->count();
-        if($users>0) return 444;
+        // if($users>0) return 444;
 
 
         $data = [];

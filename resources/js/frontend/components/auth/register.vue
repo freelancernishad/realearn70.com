@@ -122,7 +122,7 @@ this.form.country = '+880'
     this.countryList();
 
     this.addcountry()
-    this.checkBrowser()
+    // this.checkBrowser()
 
 
     },
@@ -228,9 +228,9 @@ this.form.country = '+880'
 
       async  register() {
 
-            if(localStorage.getItem('dmdevice')){
-                Notification.customError(`This device has already have an account!`);
-            }else{
+            // if(localStorage.getItem('dmdevice')){
+            //     Notification.customError(`This device has already have an account!`);
+            // }else{
 
 
 
@@ -247,11 +247,11 @@ this.form.country = '+880'
 
 
 
-            const visitorData = await this.$fpjs.getVisitorData({
-                extendedResult: true
-            });
+            // const visitorData = await this.$fpjs.getVisitorData({
+            //     extendedResult: true
+            // });
 
-            this.form['visitorId'] = visitorData.visitorId;
+            // this.form['visitorId'] = visitorData.visitorId;
 
 
 
@@ -294,7 +294,7 @@ this.form.country = '+880'
 
 
             }
-        }
+        // }
 
 
 
