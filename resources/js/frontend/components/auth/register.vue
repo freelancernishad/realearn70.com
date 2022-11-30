@@ -5,7 +5,7 @@
 
                     <div class="text-center">
 
-            <img style="width: 100px;float: center;" :src="$asseturl+'frontend/img/logos.png'" alt="">
+            <img style="width: 100px;float: center;" :src="$asseturl+'frontend/img/logos.png?v=1.0'" alt="">
         </div>
 
         <h2 class="text-center" style="font-size:30px">Register</h2>

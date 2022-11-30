@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>::REAL EARN::</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/img/logos.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/img/logos.png?v=1.0') }}">
     <!-- Bootstrap CSS -->
     <style>
+
         *{
-    --defailtColor:#FA880F;
-    --defailtColor2:#3870BD;
-}
+            --defailtColor:#36C400;
+            --defailtColor2:#A94DC9;
+        }
 
     </style>
     <link href="{{ asset('frontend/css/bootstrap.min.css') }}" rel="stylesheet" >
@@ -70,7 +71,7 @@ console.log("{{ Auth::user() }}")
 
     <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}" ></script>
     <script src="{{ asset('frontend/js/bootstrap.min.js') }}" ></script>
-    <script src="{{ asset('js/frontend.js?ver=1.0.1') }}"></script>
+    <script src="{{ asset('js/frontend.js?ver=1.0.2') }}"></script>
 
 
 

@@ -6,12 +6,12 @@
     <title>::REAL EARN::</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/img/logos.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/img/logos.png?v=1.0') }}">
     <style>
 
         *{
-            --defailtColor:#FA880F;
-            --defailtColor2:#3870BD;
+            --defailtColor:#36C400;
+            --defailtColor2:#A94DC9;
         }
 
         </style>
@@ -53,7 +53,7 @@
 
 
 
-<script src="{{ asset('js/backend.js?ver=1.0.1') }}"></script>
+<script src="{{ asset('js/backend.js?ver=1.0.2') }}"></script>
 
 
 
